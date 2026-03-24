@@ -1,0 +1,35 @@
+# StayWise AI — Central Configuration
+project:
+  name: "StayWise AI"
+  version: "1.0.0"
+
+paths:
+  raw_data:       "data/raw"
+  processed_data: "data/processed"
+  logs:           "logs"
+
+sources:
+  goibibo:
+    type: file
+    filename: "Goibibo.csv"
+    label: "Goibibo"
+    id_prefix: "GBB"
+  google:
+    type: file
+    filename: "Google Reviews.csv"
+    label: "Google"
+    id_prefix: "GGL"
+  makemytrip:
+    type: folder
+    folder: "MakeMyTrip"
+    label: "MakeMyTrip"
+    id_prefix: "MMT"
+
+processing:
+  min_hotel_name_length: 2
+  deduplicate: true
+
+trust_score:
+  overall_rating_weight: 1.0
+  aspect_rating_weight:  0.5
+  review_volume_boost:   0.2

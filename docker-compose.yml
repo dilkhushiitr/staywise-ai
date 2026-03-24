@@ -1,0 +1,38 @@
+# ─────────────────────────────────────────────────────────────
+#  StayWise AI — Docker Compose
+#  Run with: docker-compose up
+# ─────────────────────────────────────────────────────────────
+
+version: "3.9"
+
+services:
+  staywise-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: staywise-ai
+
+    ports:
+      - "8000:8000"         # API → http://localhost:8000
+                            # Swagger → http://localhost:8000/docs
+
+    volumes:
+      # Mount logs so you can see them on host machine
+      - ./logs:/app/logs
+
+      # Mount env.example so you can update API key without rebuilding
+      - ./env.example:/app/env.example
+
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout:  10s
+      retries:  3
+      start_period: 60s

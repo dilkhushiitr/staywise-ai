@@ -1,0 +1,41 @@
+==========================================================
+  STAYWISE AI — PIPELINE REPORT
+  Generated : 2026-03-22 21:20
+==========================================================
+
+  Total hotels  : 5,579
+  Total columns : 34
+  Unique cities : 560
+
+── By Source ──────────────────────────────────────
+   Goibibo         :  3,995 hotels
+   Google          :  1,004 hotels
+   MakeMyTrip      :    580 hotels
+
+── Top 10 Cities ──────────────────────────────────
+   Bangalore             :   292
+   Delhi                 :   259
+   Goa                   :   243
+   Chennai               :   205
+   Mumbai                :   187
+   Kolkata               :   172
+   Hyderabad             :   171
+   Gurgaon               :   101
+   Pune                  :    93
+   Jaipur                :    91
+
+── Data Coverage ──────────────────────────────────
+   rating_overall          :  3,996/5,579 (72%)
+   price_inr               :  1,584/5,579 (28%)
+   star_rating             :  4,480/5,579 (80%)
+   rating_cleanliness      :  2,413/5,579 (43%)
+   trust_score             :  3,995/5,579 (72%)
+
+── Price (INR) ─────────────────────────────────────
+   Min    : ₹       404
+   Median : ₹     3,189
+   Max    : ₹   125,000
+
+==========================================================
+  ✅  STEP 1 COMPLETE — Ready for Step 2: RAG
+==========================================================
