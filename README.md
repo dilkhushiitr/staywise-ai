@@ -199,11 +199,4 @@ staywise-ai/
 - [ ] React frontend dashboard
 - [ ] Multi-language support
 
----
 
-## 👨‍💻 Author
-
-Built by **[Your Name]**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/YOUR_PROFILE)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat-square&logo=github)](https://github.com/YOUR_USERNAME)
