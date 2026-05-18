@@ -12,7 +12,7 @@ AI-powered hotel decision intelligence system using RAG + LLM
 ![RAG](https://img.shields.io/badge/RAG-ChromaDB-orange?style=flat-square)
 ![LLM](https://img.shields.io/badge/LLM-Groq%20%7C%20Llama3-purple?style=flat-square)
 
-**An end-to-end AI-powered hotel recommendation system for India**
+**An end-to-end AI-powered hotel recommendation system**
 that aggregates multi-source hotel data, uses RAG + LLM for deep review
 understanding, and provides personalized, explainable recommendations.
 
@@ -71,15 +71,14 @@ FastAPI (REST API)
 
 ## 📊 Data
 
-| Source | Hotels | Cities |
-|--------|--------|--------|
-| Goibibo | 3,995 | Pan India |
-| Google Reviews | 1,004 | 51 cities |
-| MakeMyTrip | 580 | 6 major cities |
-| **Total** | **5,579** | **560** |
+| Source | Hotels  
+|--------|------- |
+| Goibibo | 3,995 |
+| Google Reviews | 1,004 |
+| MakeMyTrip | 580   |
+| **Total** | **5,579**  |
 
-Price range: ₹404 – ₹1,25,000/night
-
+ 
 ---
 
 ## 🛠️ Tech Stack
